@@ -1,7 +1,6 @@
 #!/bin/bash -l
 
-#curl -o calfires_2021.csv 
-https://gis.data.cnra.ca.gov/datasets/CALFIRE-Forestry::recent-large-fire-perimeters-5000-acres.csv?outSR=%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D
+#curl -o calfires_2021.csv https://gis.data.cnra.ca.gov/datasets/CALFIRE-Forestry::recent-large-fire-perimeters-5000-acres.csv?outSR=%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D
 
 #Print out range of years
 awk -F, '{print $2}' calfires_2021.csv | sort -n | head -n 5
